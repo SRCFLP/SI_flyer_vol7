@@ -28,7 +28,9 @@
         embedded
       >
         <a-assets>
-          <video id="myvid" src="SpaceInvaderVol7_flyer.mov" preload="auto" loop crossorigin="anonymous"></video>
+          <video id="myvid" src="SpaceInvaderVol7_flyer.mov" playsinline
+  webkit-playsinline
+  crossorigin="anonymous" crossorigin="anonymous"></video>
         </a-assets>
 
         <a-entity mindar-image-target="targetIndex: 0">
@@ -38,6 +40,10 @@
             height="1.78"
             position="0 0 0.1"
             rotation="0 0 -1"
+            id="videoInScene"
+            autoplay="false"
+            loop="true"
+            visible="false"
           ></a-video>
         </a-entity>
 
