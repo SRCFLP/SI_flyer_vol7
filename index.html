@@ -22,13 +22,13 @@
 
     <div id="ar-container">
       <a-scene
-        mindar-image="imageTargetSrc: targets.mind; autoStart: true; filterMinCF:0.001; filterBeta: 0.001"
+        mindar-image="imageTargetSrc: targets.mind; autoStart: false; filterMinCF:0.001; filterBeta: 0.001"
         vr-mode-ui="enabled: false"
         device-orientation-permission-ui="enabled: true"
         embedded
       >
         <a-assets>
-          <video id="myvid" src="SpaceInvaderVol7_flyer.mov" playsinline
+          <video id="myvid" src="SpaceInvaderVol7_flyer.mov" preload="auto" playsinline
   webkit-playsinline
   crossorigin="anonymous" crossorigin="anonymous"></video>
         </a-assets>
