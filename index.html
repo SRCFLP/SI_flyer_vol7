@@ -22,28 +22,22 @@
 
     <div id="ar-container">
       <a-scene
-        mindar-image="imageTargetSrc: targets.mind; autoStart: false; filterMinCF:0.001; filterBeta: 0.001"
+        mindar-image="imageTargetSrc: targets.mind; autoStart: true; filterMinCF:0.001; filterBeta: 0.001"
         vr-mode-ui="enabled: false"
         device-orientation-permission-ui="enabled: true"
         embedded
       >
         <a-assets>
-          <video id="myvid" src="SpaceInvaderVol7_flyer.mov" preload="auto" playsinline
-  webkit-playsinline
-  crossorigin="anonymous" crossorigin="anonymous"></video>
+          <video id="myvid" src="xeno_morph.mp4" preload="auto" loop crossorigin="anonymous"></video>
         </a-assets>
 
         <a-entity mindar-image-target="targetIndex: 0">
           <a-video
             src="#myvid"
             width="1"
-            height="1.78"
-            position="0 0 0.1"
-            rotation="0 0 -1"
-            id="videoInScene"
-            autoplay="false"
-            loop="true"
-            visible="false"
+            height="1"
+            position="0 0 0"
+            rotation="0 0 0"
           ></a-video>
         </a-entity>
 
